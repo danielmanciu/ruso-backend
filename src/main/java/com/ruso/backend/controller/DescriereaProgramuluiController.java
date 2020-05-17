@@ -1,6 +1,7 @@
 package com.ruso.backend.controller;
 
 import com.ruso.backend.model.Hotarare;
+import com.ruso.backend.model.InfoAbsolvireDisertatie;
 import com.ruso.backend.model.Regulament;
 import com.ruso.backend.repository.DescriereaProgramuluiRepository;
 import java.util.List;
@@ -34,5 +35,10 @@ public class DescriereaProgramuluiController {
     @GetMapping("/hotarari")
     public ResponseEntity<List<Hotarare>> getHotarari() {
         return ResponseEntity.ok(descriereaProgramuluiRepository.getHotarari());
+    }
+
+    @GetMapping("/infoAbsolvireDisertatie")
+    public ResponseEntity<InfoAbsolvireDisertatie> getInfoAbsolvireDisertatie() {
+        return ResponseEntity.ok(descriereaProgramuluiRepository.getInfoAbsolvireDisertatie());
     }
 }

@@ -4,11 +4,11 @@ import java.util.Arrays;
 import java.util.List;
 import org.springframework.stereotype.Repository;
 
-import static com.ruso.backend.utils.DataProvider.PrezentareGenerala.TESTIMONIAL_1;
-import static com.ruso.backend.utils.DataProvider.PrezentareGenerala.TESTIMONIAL_2;
-import static com.ruso.backend.utils.DataProvider.PrezentareGenerala.TESTIMONIAL_3;
-import static com.ruso.backend.utils.DataProvider.PrezentareGenerala.TESTIMONIAL_4;
-import static com.ruso.backend.utils.DataProvider.PrezentareGenerala.TESTIMONIAL_5;
+import static com.ruso.backend.data.PrezentareGeneralaData.TESTIMONIAL_1;
+import static com.ruso.backend.data.PrezentareGeneralaData.TESTIMONIAL_2;
+import static com.ruso.backend.data.PrezentareGeneralaData.TESTIMONIAL_3;
+import static com.ruso.backend.data.PrezentareGeneralaData.TESTIMONIAL_4;
+import static com.ruso.backend.data.PrezentareGeneralaData.TESTIMONIAL_5;
 
 @Repository
 public class PrezentareGeneralaRepository {
