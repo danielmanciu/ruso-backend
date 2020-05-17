@@ -1,6 +1,7 @@
 package com.ruso.backend.data;
 
 import com.ruso.backend.model.Act;
+import com.ruso.backend.model.CalendarAdmitere;
 import com.ruso.backend.model.Hotarare;
 import com.ruso.backend.model.InfoAbsolvireDisertatie;
 import java.util.Arrays;
@@ -162,6 +163,31 @@ public class DescriereaProgramuluiData {
                         Acte.CERTIFICAT_NASTERE, Acte.DIPLOMA_BACALAUREAT, Acte.DIPLOMA_LICENTA,
                         Acte.LUCRAREA_DISERTATIE_LISTATA, Acte.LUCRAREA_DISERTATIE_CD, Acte.DECLARATIE_AUTENTICITATE,
                         Acte.DECLARATIE_DATE_CONTACT, Acte.REZUMATUL_LUCRARII, Acte.DOVADA_ACHITARE_TAXE)
+        );
+    }
+
+    public static class InfoAdmitere {
+        public static CalendarAdmitere SESIUNEA_IULIE_2020 = new CalendarAdmitere(
+                "Sesiunea iulie 2020",
+                "9,10,11,13 iulie 2020\n- înscrierea candidaţilor, ora 9-13 (orar casierie 9-13)\n" +
+                        "15,16 iulie 2019\n- sustineri de examen (sălile vor fi afișate cu o zi înainte)\n" +
+                        "17 iulie 2020\n- afişarea listelor de admitere\n" +
+                        "18,20 iulie 2020\n– confirmarea locurilor, depunerea cererilor de redistribuire, ora 9-13 (orar casierie 9-13)\n" +
+                        "21,22 iulie 2020\n- afişarea rezultatelor dupa redistribuire 1\n" +
+                        "- confirmarea locurilor după redistribuire 1, ora 9-15 (orar casierie 9-15)\n" +
+                        "- afişarea rezultatelor după redistribuire 2\n" +
+                        "23 iulie 2020\n- confirmarea locurilor după redistribuire 2, ora 9-15 (orar casierie 9-15)\n" +
+                        "24 iulie 2020\n- afişarea listelor finale"
+        );
+        public static CalendarAdmitere SESIUNEA_SEPTEMBRIE_2020 = new CalendarAdmitere(
+                "Sesiunea septembrie 2020",
+                "7,8 septembrie 2020\n- înscrierea candidaţilor, ora 9-13 (orar casierie 9-13)\n" +
+                        "10 septembrie 2020\n- sustineri de examen\n" +
+                        "11 septembrie 2020\n- afişarea listelor de admitere\n" +
+                        "14 septembrie 2020\n– confirmarea locurilor, depunerea cererilor de redistribuire, ora 9-13 (orar casierie 9-13)\n" +
+                        "15 septembrie 2020\n- afişarea rezultatelor dupa redistribuire\n" +
+                        "- confirmarea locurilor dupa redistribuire, ora 9-13 (orar casierie 9-13)\n" +
+                        "16 septembrie 2020\n- afişarea listelor finale"
         );
     }
 }

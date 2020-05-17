@@ -1,5 +1,6 @@
 package com.ruso.backend.controller;
 
+import com.ruso.backend.model.CalendarAdmitere;
 import com.ruso.backend.model.Hotarare;
 import com.ruso.backend.model.InfoAbsolvireDisertatie;
 import com.ruso.backend.model.Regulament;
@@ -40,5 +41,10 @@ public class DescriereaProgramuluiController {
     @GetMapping("/infoAbsolvireDisertatie")
     public ResponseEntity<InfoAbsolvireDisertatie> getInfoAbsolvireDisertatie() {
         return ResponseEntity.ok(descriereaProgramuluiRepository.getInfoAbsolvireDisertatie());
+    }
+
+    @GetMapping("/infoAdmitere")
+    public ResponseEntity<List<CalendarAdmitere>> getInfoAdmitere() {
+        return ResponseEntity.ok(descriereaProgramuluiRepository.getInfoAdmitere());
     }
 }

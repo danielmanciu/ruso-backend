@@ -1,6 +1,7 @@
 package com.ruso.backend.repository;
 
 import com.ruso.backend.data.DescriereaProgramuluiData;
+import com.ruso.backend.model.CalendarAdmitere;
 import com.ruso.backend.model.Hotarare;
 import com.ruso.backend.model.InfoAbsolvireDisertatie;
 import com.ruso.backend.model.Regulament;
@@ -46,5 +47,12 @@ public class DescriereaProgramuluiRepository {
 
     public InfoAbsolvireDisertatie getInfoAbsolvireDisertatie() {
         return DescriereaProgramuluiData.InfoAbsolvire.INFO;
+    }
+
+    public List<CalendarAdmitere> getInfoAdmitere() {
+        return Arrays.asList(
+                DescriereaProgramuluiData.InfoAdmitere.SESIUNEA_IULIE_2020,
+                DescriereaProgramuluiData.InfoAdmitere.SESIUNEA_SEPTEMBRIE_2020
+        );
     }
 }
