@@ -1,7 +1,9 @@
 package com.ruso.backend.controller;
 
+import com.ruso.backend.model.Hotarare;
 import com.ruso.backend.model.Regulament;
 import com.ruso.backend.repository.DescriereaProgramuluiRepository;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,5 +29,10 @@ public class DescriereaProgramuluiController {
     @GetMapping("/regulamentCredite")
     public ResponseEntity<Regulament> getRegulamentCredite() {
         return ResponseEntity.ok(descriereaProgramuluiRepository.getRegulamentCredite());
+    }
+
+    @GetMapping("/hotarari")
+    public ResponseEntity<List<Hotarare>> getHotarari() {
+        return ResponseEntity.ok(descriereaProgramuluiRepository.getHotarari());
     }
 }

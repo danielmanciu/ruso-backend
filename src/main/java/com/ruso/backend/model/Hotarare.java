@@ -1,15 +1,17 @@
 package com.ruso.backend.model;
 
 public class Hotarare {
-    public Hotarare(String titlu, String subtitlu, String descriere, String linkMaiMulte) {
-        this.titlu = titlu;
-        this.subtitlu = subtitlu;
-        this.descriere = descriere;
-        this.linkMaiMulte = linkMaiMulte;
-    }
+    private final String hotarator;
+    private final String data;
+    private final String nume;
+    private final String link;
+    private final String infoAditional;
 
-    private String titlu;
-    private String subtitlu;
-    private String descriere;
-    private String linkMaiMulte;
+    public Hotarare(String hotarator, String data, String nume, String link, String infoAditional) {
+        this.hotarator = hotarator;
+        this.data = data;
+        this.nume = nume;
+        this.link = link;
+        this.infoAditional = infoAditional;
+    }
 }

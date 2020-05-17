@@ -1,6 +1,8 @@
 package com.ruso.backend.utils;
 
-public class StringProvider {
+import com.ruso.backend.model.Hotarare;
+
+public class DataProvider {
 
     public static String EMPTY_STRING = "";
 
@@ -117,20 +119,91 @@ public class StringProvider {
             }
 
             public static class Credite {
-                public static String TITLU = "REGULAMENT\n" +
-                        "privind activitatea profesională a studenţilor (nivel licenţă şi master) din Universitatea Babeş-Bolyai în baza sistemului european de credite transferabile (ECTS)";
+                public static String TITLU = "REGULAMENT privind activitatea profesională a studenţilor (nivel licenţă şi master) din Universitatea Babeş-Bolyai în baza sistemului european de credite transferabile (ECTS)";
                 public static String SUBTITLU = EMPTY_STRING;
                 public static String DESCRIERE = "CAP. I. DISPOZIŢII GENERALE\n" +
                         "\n" +
-                        "Art.1. Regulamentul privind activitatea profesională a studenţilor în baza Sistemului European de Credite Transferabile cuprinde un set de norme aplicabile în interiorul Universităţii Babeş-Bolyai din Cluj-Napoca.\n" +
+                        "Art.1. Regulamentul privind activitatea profesională a studenţilor în baza Sistemului European de Credite Transferabile cuprinde un set de norme aplicabile în interiorul Universităţii Babeş-Bolyai din Cluj-Napoca." +
                         "\n" +
                         "Art.2. Prevederile prezentului regulament se aplică tuturor categoriilor de studenţi şi tuturor formelor de învăţământ de la Universitatea Babeş-Bolyai din Cluj-Napoca, respectând Legea educaţiei naţionale 1/2011, Ordinul MECTS privind aprobarea Codului drepturilor şi obligaţiilor studentului şi Carta Universităţii Babeş-Bolyai din Cluj-Napoca. În Universitate, în conformitate cu prevederile legale în vigoare, procesul de învăţământ se organizează pe cicluri:\n" +
                         "\n" +
                         "ciclul I: licenţa, cuprinde 6 – 8 semestre;\n" +
                         "ciclul II: masterat, cuprinde 2 - 4 semestre;";
-                public static String LINK_MAI_MULTE = "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/reg_cazari.pdf";
+                public static String LINK_MAI_MULTE = "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/reg_credite.pdf";
             }
 
+            public static class Hotarari {
+                public static Hotarare HOTARARE_1 = new Hotarare(
+                        "Consiliul Facultatii",
+                        "14.05.2019",
+                        "EXTRAS referitor la sesiunea de lichidare",
+                        "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/hotarari-cf/extras-sesiune-lichidare-2019.pdf",
+                        EMPTY_STRING
+                );
+                public static Hotarare HOTARARE_2 = new Hotarare(
+                        "Consiliul Facultatii",
+                        "21.11.2017",
+                        "criterii suplimentare pentru transferul de la specializarea Pedagogie la specializarea Pedagogia învățământului primar și preșcolar",
+                        "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/hotarari-cf/2017-transfer-ped-pipp.pdf",
+                        EMPTY_STRING
+                );
+                public static Hotarare HOTARARE_3 = new Hotarare(
+                        "Consiliul de Administratie",
+                        "17.04.2016",
+                        "hotarare privind modificarea cuantumului burselor studentilor din semestrul II, anul universitar 2015-2016",
+                        "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/hotarari-ca/2015-2016-modificare-cuantum-burse-sem-2.pdf",
+                        EMPTY_STRING
+                );
+                public static Hotarare HOTARARE_4 = new Hotarare(
+                        "Senat UBB",
+                        EMPTY_STRING,
+                        "Hotararea Nr. 24.314/30.09.2014",
+                        "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/hotarari-ubb/taxe-2014_2015.pdf",
+                        "Referitor la Regulamentul de taxe pe anul universitar 2014-2015"
+                );
+                public static Hotarare HOTARARE_5 = new Hotarare(
+                        "Colegiu Consiliului Profesoral",
+                        "14.05.2014",
+                        "EXTRAS referitor la sesiunea de lichidare",
+                        "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/hotarari-ccp/extras-sesiune-lichidare-2014.pdf",
+                        EMPTY_STRING
+                );
+                public static Hotarare HOTARARE_6 = new Hotarare(
+                        "Senat UBB",
+                        EMPTY_STRING,
+                        "Hotararea Nr. 4510/03.03.2014",
+                        "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/hotarari-ubb/2014-referitor-burse-performanta.pdf",
+                        "Referitor la Metodologia de acordare a burselor de performanta"
+                );
+                public static Hotarare HOTARARE_7 = new Hotarare(
+                        "Colegiu Consiliului Profesoral",
+                        "05.06.2013",
+                        "EXTRAS referitor la pragul minim acceptat la examenul de licenta/inscriere admitere masterat si numarul minim de puncte obtinut la testul de limba la centrele universitatii",
+                        "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/hotarari-ccp/extras-prag-punct-nivel-limba.pdf",
+                        EMPTY_STRING
+                );
+                public static Hotarare HOTARARE_8 = new Hotarare(
+                        "Colegiu Consiliului Profesoral",
+                        "07.05.2012",
+                        "Hotarare cu privire la organizarea sesiunii de lichidare",
+                        "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/hotarari-ccp/extras-sesiune-lichidare-02.pdf",
+                        EMPTY_STRING
+                );
+                public static Hotarare HOTARARE_9 = new Hotarare(
+                        "Senat UBB",
+                        EMPTY_STRING,
+                        "Hotararea Nr. 33/SEN/02.05.2012",
+                        "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/hotarari-ubb/hotarare-senat-33-2012.pdf",
+                        EMPTY_STRING
+                );
+                public static Hotarare HOTARARE_10 = new Hotarare(
+                        "Senat UBB",
+                        EMPTY_STRING,
+                        "17.02.2011 - Notificare privind aspectele vietii studentesti",
+                        "https://psiedu.ubbcluj.ro/data/uploads/doc/regulamente/hotarari-ubb/viata_studenteasca.pdf",
+                        EMPTY_STRING
+                );
+            }
         }
     }
 }
