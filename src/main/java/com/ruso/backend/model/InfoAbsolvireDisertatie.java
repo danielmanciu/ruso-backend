@@ -14,4 +14,20 @@ public class InfoAbsolvireDisertatie {
         this.detaliiSustinereDisertatie = detaliiSustinereDisertatie;
         this.acteNecesare = acteNecesare;
     }
+
+    public String getDomeniu() {
+        return domeniu;
+    }
+
+    public String getSpecializare() {
+        return specializare;
+    }
+
+    public String getDetaliiSustinereDisertatie() {
+        return detaliiSustinereDisertatie;
+    }
+
+    public List<Act> getActeNecesare() {
+        return acteNecesare;
+    }
 }

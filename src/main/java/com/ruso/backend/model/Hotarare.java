@@ -14,4 +14,24 @@ public class Hotarare {
         this.link = link;
         this.infoAditional = infoAditional;
     }
+
+    public String getHotarator() {
+        return hotarator;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public String getNume() {
+        return nume;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public String getInfoAditional() {
+        return infoAditional;
+    }
 }

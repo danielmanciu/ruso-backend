@@ -18,4 +18,16 @@ public class Act {
         this.model = model;
         this.linkModel = linkModel;
     }
+
+    public String getNume() {
+        return nume;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getLinkModel() {
+        return linkModel;
+    }
 }

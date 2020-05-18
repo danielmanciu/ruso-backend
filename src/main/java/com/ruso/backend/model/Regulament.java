@@ -12,4 +12,20 @@ public class Regulament {
         this.descriere = descriere;
         this.linkMaiMulte = linkMaiMulte;
     }
+
+    public String getTitlu() {
+        return titlu;
+    }
+
+    public String getSubtitlu() {
+        return subtitlu;
+    }
+
+    public String getDescriere() {
+        return descriere;
+    }
+
+    public String getLinkMaiMulte() {
+        return linkMaiMulte;
+    }
 }
