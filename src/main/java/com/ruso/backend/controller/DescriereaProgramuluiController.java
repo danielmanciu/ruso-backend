@@ -4,6 +4,7 @@ import com.ruso.backend.model.CalendarAdmitere;
 import com.ruso.backend.model.Hotarare;
 import com.ruso.backend.model.InfoAbsolvireDisertatie;
 import com.ruso.backend.model.Regulament;
+import com.ruso.backend.model.Semestru;
 import com.ruso.backend.repository.DescriereaProgramuluiRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,5 +48,10 @@ public class DescriereaProgramuluiController {
     @GetMapping("/infoAdmitere")
     public ResponseEntity<List<CalendarAdmitere>> getInfoAdmitere() {
         return ResponseEntity.ok(descriereaProgramuluiRepository.getInfoAdmitere());
+    }
+
+    @GetMapping("/listaDiscipline")
+    public ResponseEntity<List<Semestru>> getListaDiscipline() {
+        return ResponseEntity.ok(descriereaProgramuluiRepository.getListaDiscipline());
     }
 }

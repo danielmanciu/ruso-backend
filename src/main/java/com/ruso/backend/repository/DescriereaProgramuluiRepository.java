@@ -5,6 +5,7 @@ import com.ruso.backend.model.CalendarAdmitere;
 import com.ruso.backend.model.Hotarare;
 import com.ruso.backend.model.InfoAbsolvireDisertatie;
 import com.ruso.backend.model.Regulament;
+import com.ruso.backend.model.Semestru;
 import java.util.Arrays;
 import java.util.List;
 import org.springframework.stereotype.Repository;
@@ -53,6 +54,15 @@ public class DescriereaProgramuluiRepository {
         return Arrays.asList(
                 DescriereaProgramuluiData.InfoAdmitere.SESIUNEA_IULIE_2020,
                 DescriereaProgramuluiData.InfoAdmitere.SESIUNEA_SEPTEMBRIE_2020
+        );
+    }
+
+    public List<Semestru> getListaDiscipline() {
+        return Arrays.asList(
+                DescriereaProgramuluiData.ListaDiscipline.SEMESTRU_1,
+                DescriereaProgramuluiData.ListaDiscipline.SEMESTRU_2,
+                DescriereaProgramuluiData.ListaDiscipline.SEMESTRU_3,
+                DescriereaProgramuluiData.ListaDiscipline.SEMESTRU_4
         );
     }
 }

@@ -1,8 +1,10 @@
 package com.ruso.backend.data;
 
 import com.ruso.backend.model.CalendarAdmitere;
+import com.ruso.backend.model.Disciplina;
 import com.ruso.backend.model.Hotarare;
 import com.ruso.backend.model.InfoAbsolvireDisertatie;
+import com.ruso.backend.model.Semestru;
 import java.util.Arrays;
 
 import static com.ruso.backend.data.Constants.EMPTY_STRING;
@@ -157,6 +159,59 @@ public class DescriereaProgramuluiData {
                         "15 septembrie 2020\n- afişarea rezultatelor dupa redistribuire\n" +
                         "- confirmarea locurilor dupa redistribuire, ora 9-13 (orar casierie 9-13)\n" +
                         "16 septembrie 2020\n- afişarea listelor finale"
+        );
+    }
+
+    public static class ListaDiscipline {
+        public static Semestru SEMESTRU_1 = new Semestru(
+                1,
+                Arrays.asList(
+                        new Disciplina("PMR1401", "Psihologia personalului / Personnel Psychology"),
+                        new Disciplina("PME1427", "Advanced Organizational Psychology / Psihologie organizațională avansată (în limba engleză)"),
+                        new Disciplina("PMR1428", "Metodologia cercetării și analiza datelor I (elemente de etică, noțiuni de bază" +
+                                " de Excel & SPSS) / Research methodology and data analysis I (ethics, basic concepts of Excel & SPSS)"),
+                        new Disciplina("PMR1425", "Psihologie antreprenorială / Psychology of entrepreneurship"),
+                        new Disciplina("PME1429", "Managerial Decision Making/Decizia managerială (în limba engleză)"),
+                        new Disciplina("PMR1422", "Stagiu practic 1 / Traineeship 1")
+                )
+        );
+        public static Semestru SEMESTRU_2 = new Semestru(
+                2,
+                Arrays.asList(
+                        new Disciplina("PME1438", "Occupational Health Psychology / Psihologia sănătății ocupaționale (în limba engleză)"),
+                        new Disciplina("PME1439", "Methods of Enhancing Group Performance / Metode de optimizare a performanței grupurilor (în limba engleză)"),
+                        new Disciplina("PME1430", "Knowledge Management and Innovation / Managementul cunoștințelor și inovație (în limba engleză)"),
+                        new Disciplina("PMR1431", "Metodologia cercetării și analiza datelor II (nivel avansat) / Research methodology and data analysis II (advanced)"),
+                        new Disciplina("PMR1419", "Managementul proiectelor / Project Management"),
+                        new Disciplina("PMR1408", "Stagiu practic 2 / Traineeship 2"),
+                        new Disciplina("PRM1420", "Curs opțional: Tehnici de analiză de conținut în organizații / Content analysis in organisations"),
+                        new Disciplina("PRM1423", "Curs opțional: Sănătate și stare de bine în organizații / Health and wellbeing in organizations")
+                )
+        );
+        public static Semestru SEMESTRU_3 = new Semestru(
+                3,
+                Arrays.asList(
+                        new Disciplina("PMR1409", "Coaching: metode și tehnici / Coaching: methods and techniques"),
+                        new Disciplina("PMR1432", "Management strategic / Strategic Management"),
+                        new Disciplina("PME1443", "Diagnoză organizațională / Organizational Diagnosis (în limba engleză)"),
+                        new Disciplina("PMR1412", "Training în organizații / Training in organizations"),
+                        new Disciplina("PME1433", "Research in Organizations I / Stagiu de cercetare în organizații I (în limba engleză)"),
+                        new Disciplina("PME1441", "Curs opțional: Consumer Psychology and Social Marketing / Psihologia consumatorului și marketing social (în limba engleză)"),
+                        new Disciplina("PME1437", "Curs opțional: Gaming and Simulations / Simulări și metoda jocurilor (în limba engleză)")
+                )
+        );
+        public static Semestru SEMESTRU_4 = new Semestru(
+                4,
+                Arrays.asList(
+                        new Disciplina("PME1442", "Research in Organizations II (applied research, research ethics and " +
+                                "preparing the disertation) / Stagiu de cercetare în organizații II (cercetare " +
+                                "aplicată, etica cercetării și pregătirea disertației) (în limba engleză)"),
+                        new Disciplina("PMR1403", "Dezvoltare organizațională / Organizational Development"),
+                        new Disciplina("PME1440", "Multi-party Collaboration and Negotiation / Colaborare și negociere (în limba engleză)"),
+                        new Disciplina("PME1435", "Writing and Presentation Skills / Abilități de redactare a unui manuscris științific și prezentare (în limba engleză)"),
+                        new Disciplina("PME1436", "Technology and Society / Tehnologie și societate (în limba engleză)"),
+                        new Disciplina("PMR1418", "Centre de evaluare și dezvoltare a personalului / Assessment centers and personnel development")
+                )
         );
     }
 }
