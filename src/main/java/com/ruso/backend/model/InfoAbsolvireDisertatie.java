@@ -5,13 +5,12 @@ import java.util.List;
 public class InfoAbsolvireDisertatie {
     private final String domeniu;
     private final String specializare;
-    private final String detaliiSustinereDisertatie;
-    private final List<Act> acteNecesare;
+    // front-end: unele acte au link dupa ele, se pune din front-end ca sa evitam sa trimitem modele complicate
+    private final List<String> acteNecesare;
 
-    public InfoAbsolvireDisertatie(String domeniu, String specializare, String detaliiSustinereDisertatie, List<Act> acteNecesare) {
+    public InfoAbsolvireDisertatie(String domeniu, String specializare, List<String> acteNecesare) {
         this.domeniu = domeniu;
         this.specializare = specializare;
-        this.detaliiSustinereDisertatie = detaliiSustinereDisertatie;
         this.acteNecesare = acteNecesare;
     }
 
@@ -23,11 +22,7 @@ public class InfoAbsolvireDisertatie {
         return specializare;
     }
 
-    public String getDetaliiSustinereDisertatie() {
-        return detaliiSustinereDisertatie;
-    }
-
-    public List<Act> getActeNecesare() {
+    public List<String> getActeNecesare() {
         return acteNecesare;
     }
 }

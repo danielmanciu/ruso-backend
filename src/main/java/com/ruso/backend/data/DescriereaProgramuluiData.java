@@ -1,6 +1,5 @@
 package com.ruso.backend.data;
 
-import com.ruso.backend.model.Act;
 import com.ruso.backend.model.CalendarAdmitere;
 import com.ruso.backend.model.Hotarare;
 import com.ruso.backend.model.InfoAbsolvireDisertatie;
@@ -119,50 +118,20 @@ public class DescriereaProgramuluiData {
 
     public static class InfoAbsolvire {
 
-        public static class Acte {
-            public static Act DOSAR_PLIC = new Act("dosar plic");
-            public static Act FISA_LICHIDARE = new Act(
-                    "fisa de lichidare semnata si stampilata de catre serviciile UBB",
-                    "fisa de lichidare",
-                    "https://psiedu.ubbcluj.ro/data/uploads/doc/licenta/fisa-lichidare.pdf"
-            );
-            public static Act REFERAT_DISERTATIE = new Act(
-                    "referat privind lucrarea de disertatie",
-                    "referatul tipizat",
-                    "https://psiedu.ubbcluj.ro/data/uploads/doc/licenta/2018-referat-licenta.pdf"
-            );
-            public static Act CERERE_TIP = new Act(
-                    "cerere tip, fata-verso",
-                    "modelul de cerere",
-                    "https://psiedu.ubbcluj.ro/data/uploads/doc/disertatie/2020-formular-inscriere-disertatie.pdf"
-            );
-            public static Act CERTIFICAT_NASTERE = new Act("certificat de nastere original + copie");
-            public static Act DIPLOMA_BACALAUREAT = new Act("diploma de bacalaureat (original si 2 copii) si foaie matricola (original si 2 copii)");
-            public static Act DIPLOMA_LICENTA = new Act("diploma de licenta (original si 2 copii) si foaie matricola sau supliment la diploma (original si 2 copii)");
-            public static Act LUCRAREA_DISERTATIE_LISTATA = new Act("lucrarea de disertatie – 1 exemplar listat si legat (nu este obligatorie copertarea) care se depune la comisie in momentul sustinerii");
-            public static Act LUCRAREA_DISERTATIE_CD = new Act("lucrarea de disertatie in format electronic, pe CD");
-            public static Act DECLARATIE_AUTENTICITATE = new Act(
-                    "declaratie privind autenticitatea tezei",
-                    "declaratia tip",
-                    "https://psiedu.ubbcluj.ro/data/uploads/doc/licenta/2018-declaratie-autenticitate-licenta-disertatie.pdf"
-            );
-            public static Act DECLARATIE_DATE_CONTACT = new Act(
-                    "declaratie date contact",
-                    "declaratia tip",
-                    "https://psiedu.ubbcluj.ro/data/uploads/doc/licenta/2019-declaratie-contact-licenta-disertatie.pdf"
-            );
-            public static Act REZUMATUL_LUCRARII = new Act("rezumatul lucrarii de licenta/disertatie, max. 1 pag. (un exemplar in limba romana si un exemplar intr-o limba de circulatie internationala)");
-            public static Act DOVADA_ACHITARE_TAXE = new Act("dovada achitării taxei de înscriere (daca este cazul)");
-        }
+        public static String CERERE_TIP = "cerere tip (semnată)";
+        public static String DIPLOMA_BACALAUREAT = "diploma de bacalaureat și foaia matricolă (pentru diplomele însoțite de foaie matricolă) sau diploma echivalentă acesteia (excepție fac absolvenții care au la dosarul de student aceste acte în original)";
+        public static String DIPLOMA_LICENTA = "diploma de licență și foaia matricolă/suplimentul la diplomă (pentru diplomele însoțite de foaie matricolă/suplimentul la diplomă) sau diploma echivalentă acesteia (excepție fac absolvenții care au la dosarul de student aceste acte în original)";
+        public static String CERTIFICAT_NASTERE = "certificatul de naștere";
+        public static String CARTE_IDENTITATE = "cartea de identitate, în situațiile în care: a) certificatul de naștere nu conține Codul Numeric Personal; b) certificatul de naștere este vechi și se specifică raionul și nu județul; c) denumirea oficială a localității s-a schimbat; d) este nevoie de clarificarea datelor personale ale titularului";
+        public static String LUCRARE_DISERTATIE = "lucrarea de disertație însoțită de acceptul coordonatorului științific și de o declarație pe proprie răspundere privind originalitatea lucrării (semnată)";
+        public static String DOVADA_ACHITARE_TAXE = "dovada achitării taxei de înscriere (dacă este cazul)";
+        public static String DECLARATIE_DATE_CONTACT = "declarație date de contact";
 
         public static InfoAbsolvireDisertatie INFO = new InfoAbsolvireDisertatie(
                 "Psihologie",
                 "Psihologia resurselor umane si sanatate organizationala LR",
-                "19 februarie ora 9, str. Republicii nr.37, biroul prof.dr. Baban, etajul I",
-                Arrays.asList(Acte.DOSAR_PLIC, Acte.FISA_LICHIDARE, Acte.REFERAT_DISERTATIE, Acte.CERERE_TIP,
-                        Acte.CERTIFICAT_NASTERE, Acte.DIPLOMA_BACALAUREAT, Acte.DIPLOMA_LICENTA,
-                        Acte.LUCRAREA_DISERTATIE_LISTATA, Acte.LUCRAREA_DISERTATIE_CD, Acte.DECLARATIE_AUTENTICITATE,
-                        Acte.DECLARATIE_DATE_CONTACT, Acte.REZUMATUL_LUCRARII, Acte.DOVADA_ACHITARE_TAXE)
+                Arrays.asList(CERERE_TIP, DIPLOMA_BACALAUREAT, DIPLOMA_LICENTA, CERTIFICAT_NASTERE, CARTE_IDENTITATE,
+                        LUCRARE_DISERTATIE, DOVADA_ACHITARE_TAXE, DECLARATIE_DATE_CONTACT)
         );
     }
 
