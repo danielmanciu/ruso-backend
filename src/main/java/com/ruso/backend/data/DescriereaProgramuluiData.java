@@ -144,25 +144,41 @@ public class DescriereaProgramuluiData {
     public static class InfoAdmitere {
         public static CalendarAdmitere SESIUNEA_IULIE_2020 = new CalendarAdmitere(
                 "Sesiunea iulie 2020",
-                "9,10,11,13 iulie 2020\\n- înscrierea candidaţilor, ora 9-13 (orar casierie 9-13)\\n" +
-                        "15,16 iulie 2019\\n- sustineri de examen (sălile vor fi afișate cu o zi înainte)\\n" +
-                        "17 iulie 2020\\n- afişarea listelor de admitere\\n" +
-                        "18,20 iulie 2020\\n– confirmarea locurilor, depunerea cererilor de redistribuire, ora 9-13 (orar casierie 9-13)\\n" +
-                        "21,22 iulie 2020\\n- afişarea rezultatelor dupa redistribuire 1\\n" +
-                        "- confirmarea locurilor după redistribuire 1, ora 9-15 (orar casierie 9-15)\\n" +
-                        "- afişarea rezultatelor după redistribuire 2\\n" +
-                        "23 iulie 2020\\n- confirmarea locurilor după redistribuire 2, ora 9-15 (orar casierie 9-15)\\n" +
-                        "24 iulie 2020\\n- afişarea listelor finale"
+                Arrays.asList(
+                        "9,10,11,13 iulie 2020",
+                        "- înscrierea candidaţilor, ora 9-13 (orar casierie 9-13)",
+                        "15,16 iulie 2019",
+                        "- sustineri de examen (sălile vor fi afișate cu o zi înainte)",
+                        "17 iulie 2020",
+                        "- afişarea listelor de admitere",
+                        "18,20 iulie 2020",
+                        "– confirmarea locurilor, depunerea cererilor de redistribuire, ora 9-13 (orar casierie 9-13)",
+                        "21,22 iulie 2020",
+                        "- afişarea rezultatelor dupa redistribuire 1",
+                        "- confirmarea locurilor după redistribuire 1, ",
+                        "ora 9-15 (orar casierie 9-15)",
+                        "- afişarea rezultatelor după redistribuire 2",
+                        "23 iulie 2020",
+                        "- confirmarea locurilor după redistribuire 2, ora 9-15 (orar casierie 9-15),",
+                        "24 iulie 2020",
+                        "- afişarea listelor finale")
         );
         public static CalendarAdmitere SESIUNEA_SEPTEMBRIE_2020 = new CalendarAdmitere(
                 "Sesiunea septembrie 2020",
-                "7,8 septembrie 2020\\n- înscrierea candidaţilor, ora 9-13 (orar casierie 9-13)\\n" +
-                        "10 septembrie 2020\\n- sustineri de examen\\n" +
-                        "11 septembrie 2020\\n- afişarea listelor de admitere\\n" +
-                        "14 septembrie 2020\\n– confirmarea locurilor, depunerea cererilor de redistribuire, ora 9-13 (orar casierie 9-13)\\n" +
-                        "15 septembrie 2020\\n- afişarea rezultatelor dupa redistribuire\\n" +
-                        "- confirmarea locurilor dupa redistribuire, ora 9-13 (orar casierie 9-13)\\n" +
-                        "16 septembrie 2020\\n- afişarea listelor finale"
+                Arrays.asList(
+                        "7,8 septembrie 2020",
+                        "- înscrierea candidaţilor, ora 9-13 (orar casierie 9-13)",
+                        "10 septembrie 2020",
+                        "- sustineri de examen",
+                        "11 septembrie 2020",
+                        "- afişarea listelor de admitere",
+                        "14 septembrie 2020",
+                        "– confirmarea locurilor, depunerea cererilor de redistribuire, ora 9-13 (orar casierie 9-13)",
+                        "15 septembrie 2020",
+                        "- afişarea rezultatelor dupa redistribuire",
+                        "- confirmarea locurilor dupa redistribuire, ora 9-13 (orar casierie 9-13)",
+                        "16 septembrie 2020",
+                        "- afişarea listelor finale")
         );
     }
 
